@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema(
   {
@@ -16,15 +16,14 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    avatar: {
+    avatar:{
       type: String,
-      default:
-        "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Fuser-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg&tbnid=hmy6sO63nVxONM&vet=12ahUKEwizhdCcntKEAxW8TKQEHR6XAYsQMygAegQIARBx..i&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Ffree-photos-vectors%2Fuser-profile&docid=ZyFeK2BRducuvM&w=626&h=626&q=user%20profile&ved=2ahUKEwizhdCcntKEAxW8TKQEHR6XAYsQMygAegQIARBx"
-      },
+      default: "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
   },
   { timestamps: true }
 );
 
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model('User', userSchema);
 
 export default User;
